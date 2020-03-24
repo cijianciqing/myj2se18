@@ -1,4 +1,4 @@
-package call_back;
+package wqn_call_back;
 
 public class TestClass {
     public void testMethod(Wqn_Interface wqn_instance) {

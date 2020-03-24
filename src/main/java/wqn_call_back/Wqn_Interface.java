@@ -1,4 +1,4 @@
-package call_back;
+package wqn_call_back;
 
 public interface Wqn_Interface {
     void wqn_action_method();
