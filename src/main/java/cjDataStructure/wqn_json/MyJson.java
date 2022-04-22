@@ -1,4 +1,4 @@
-package wqn_json;
+package cjDataStructure.wqn_json;
 
 //import net.minidev.json.JSONObject;
 

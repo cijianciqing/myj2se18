@@ -1,4 +1,4 @@
-package wqn_enum;
+package cjDataStructure.wqn_enum;
 
 public enum  Wqn_Enum {
     SMALL("s"),

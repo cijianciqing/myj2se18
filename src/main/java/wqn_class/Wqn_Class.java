@@ -15,7 +15,8 @@ public class Wqn_Class {
     public void test02(){
         test01();
         System.out.println("public method in Wqn_class!");
-
     }
+
+
 
 }

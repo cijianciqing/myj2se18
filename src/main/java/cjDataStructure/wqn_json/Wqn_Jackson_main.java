@@ -1,4 +1,4 @@
-package wqn_json;
+package cjDataStructure.wqn_json;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;

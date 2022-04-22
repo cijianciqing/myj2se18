@@ -1,7 +1,7 @@
 /**
  * 
  */
-package wqn_enum;
+package cjDataStructure.wqn_enum;
 
 
 /**

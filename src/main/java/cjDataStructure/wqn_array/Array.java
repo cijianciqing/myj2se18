@@ -1,4 +1,4 @@
-package wqn_array;
+package cjDataStructure.wqn_array;
 
 import java.util.Arrays;
 
