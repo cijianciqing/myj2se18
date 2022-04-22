@@ -1,13 +1,23 @@
 package interview.singleton;
 
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
+
 public class SingletonMain {
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+
+
+
 //        SingletonHungry shinstance = SingletonHungry.SHINSTANCE;
 //        SingletonHungry shinstance2 = SingletonHungry.SHINSTANCE;
 //        System.out.println(shinstance == shinstance2);
 
-        Thread thread1 = new Thread(() -> {
+
+       /* Thread thread1 = new Thread(() -> {
             System.out.println(Thread.currentThread().getName()+"---> start");
             SingletonLazy singletonLazy = SingletonLazy.getSingletonLazy();
             System.out.println(singletonLazy);
@@ -22,7 +32,8 @@ public class SingletonMain {
         thread1.setName("t1");
         thread1.start();
         thread2.setName("t2");
-        thread2.start();
+        thread2.start();*/
+
 
 
     }
