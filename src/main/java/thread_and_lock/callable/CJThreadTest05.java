@@ -1,4 +1,4 @@
-package cjThread.callable;
+package thread_and_lock.callable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

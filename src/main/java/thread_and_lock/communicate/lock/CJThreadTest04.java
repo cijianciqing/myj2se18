@@ -1,4 +1,4 @@
-package cjThread.communicate.lock;
+package thread_and_lock.communicate.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

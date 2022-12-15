@@ -1,4 +1,4 @@
-package cjThread.deamon;
+package thread_and_lock.deamon;
 
 public class CJThreadTest05 {
     public static void main(String[] args) {

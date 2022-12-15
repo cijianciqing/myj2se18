@@ -1,4 +1,4 @@
-package cjThread.pool;
+package thread_and_lock.pool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

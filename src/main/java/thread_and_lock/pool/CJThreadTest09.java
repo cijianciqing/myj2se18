@@ -1,27 +1,24 @@
-package cjThread.pool;
+package thread_and_lock.pool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-class TicketList{
-    private static int  ticketNo = 100;
-    Object object =  new Object();
-    public synchronized  int getTicketNo(){
-         int currentTickNo = ticketNo;
-         ticketNo--;
-        return currentTickNo;
-    }
-}
 
-class CJWindows11 implements Runnable {
 
-    TicketList ticketList = new TicketList();
+class CJWindows2 implements Runnable {
 
+    private static int ticketNo = 100;
+    private static Object object = new Object();
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName()+" is going");
-        int ticketNo = ticketList.getTicketNo();
-        System.out.println(Thread.currentThread().getName()+" is selling ticket "+ticketNo);
+        synchronized (object){
+            if(ticketNo>0){
+                System.out.println(Thread.currentThread().getName()+" is selling ticket "+ticketNo);
+            }
+            ticketNo--;
+        }
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -32,9 +29,10 @@ class CJWindows11 implements Runnable {
 
 
 }
-public class CJThreadTest08 {
+
+public class CJThreadTest09 {
     public static void main(String[] args) {
-        CJWindows11 cjWindows = new CJWindows11();
+        CJWindows2 cjWindows = new CJWindows2();
 
         ExecutorService executorService = Executors.newFixedThreadPool(3);
 

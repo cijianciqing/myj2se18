@@ -1,4 +1,4 @@
-package cjThread;
+package thread_and_lock;
 
 public class CJThreadTest01 {
     public static class CJThread extends Thread{

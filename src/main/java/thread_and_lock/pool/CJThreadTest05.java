@@ -1,7 +1,6 @@
-package cjThread.pool;
+package thread_and_lock.pool;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 
 class CJWindows implements Runnable {
     private int ticketNo = 100;
